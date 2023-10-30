@@ -1,0 +1,24 @@
+import React from 'react';
+
+const WhyChooseUs = () => {
+  return (
+    <div className="why-choose-us">
+      <h2>Why Choose Us?</h2>
+      <div className="feature">
+        <h3>Certified Technicians</h3>
+        <p>Our team comprises ASE-certified technicians who have undergone rigorous training and have proven their expertise in car repair and maintenance.</p>
+      </div>
+      <div className="feature">
+        <h3>Award-Winning Service</h3>
+        <p>We have been recognized for our exceptional service and commitment to customer satisfaction, receiving various awards and accolades.</p>
+      </div>
+      {/* ... other features ... */}
+      <div className="contact-us">
+        <h3>Contact Us Today!</h3>
+        <p>Don't settle for less when it comes to your vehicle. Trust the certified and award-winning experts at [Your Company Name] to take care of all your car repair needs. Contact us today to schedule an appointment and experience the difference of unparalleled service!</p>
+      </div>
+    </div>
+  );
+};
+
+export default WhyChooseUs;
