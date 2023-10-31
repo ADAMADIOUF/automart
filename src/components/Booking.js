@@ -7,6 +7,7 @@ const Contact = () => {
     services: '',
     date: '',
     message: '',
+    phoneNumber:"",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [message, setMessage] = useState('')
@@ -31,8 +32,9 @@ const Contact = () => {
           email: '',
           services: '',
           date: '',
-         
+
           message: '',
+          phoneNumber:"",
         })
         setTimeout(() => setMessage(''), 3000) // Clear message after 3 seconds
       } else {
@@ -50,7 +52,6 @@ const Contact = () => {
 
   return (
     <div className='booking'>
-      
       <h3>Book For A Service</h3>
       <form onSubmit={handleSubmit} className='booking-form'>
         <div className='booking-container'>
@@ -90,6 +91,19 @@ const Contact = () => {
             max='2023-12-31'
             required
           />
+        </div>
+        <div className='booking-container'>
+          <input
+            type='number'
+            placeholder='Phone Number'
+            value={formData.phoneNumber}
+            onChange={(e) =>
+              setFormData({ ...formData, phoneNumber: e.target.value })
+            }
+            required
+            className='input-text-area'
+          />
+          
         </div>
         <div className='booking-container'>
           <input
