@@ -796,7 +796,7 @@ font-size: 2rem;
   z-index: 1000; 
 }
 .loading-container h3{
-  color: var(--clr-white);
+  color: var(--primary);
 }
 .road-progress-bar {
   width: 80%;
