@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className='logo'>
            <h3>
             <span className="logo-icon">
-             <AiFillCar/> auto mart
+             CHADS <AiFillCar/> 
             </span>
            </h3>
           </div>

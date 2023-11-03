@@ -19,10 +19,10 @@ const Footer = () => {
             4505 E Burdick Expy Minot north dakota, USA
           </p>
           <p>
-            <FaPhone /> (123) 456-7890
+            <FaPhone /> +1 701-721-8650
           </p>
           <p>
-            <FaEnvelope /> email@example.com
+            <FaEnvelope /> chadsautoRepair@gmail.com
           </p>
         </div>
         <div>
@@ -64,7 +64,7 @@ const Footer = () => {
           paddingTop: '10px',
         }}
       >
-        <p>Auto Mart&copy; {new Date().getFullYear()} adamadiouf</p>
+        <p>Chads Auto &copy; {new Date().getFullYear()} adamadiouf</p>
       </div>
     </div>
   )

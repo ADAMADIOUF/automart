@@ -30,7 +30,7 @@ const Topbar = () => {
         <article className='topbar-right'>
           <div className='topbar-item'>
             <FontAwesomeIcon icon={faPhoneAlt} className='topbar-icon' />
-            <span>+1 701 852-3722</span>
+            <span>+1 701-721-8650</span>
           </div>
           <div className='topbar-socials'>
             <Link className='topbar-social' to=''>

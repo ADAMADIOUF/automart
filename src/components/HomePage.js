@@ -3,15 +3,27 @@ import Carousel from './Carousel'
 import { FaTools, FaWrench } from 'react-icons/fa'
 import{MdOutlineEngineering } from "react-icons/md"
 import a from "../assets/home-about1.png"
+import b from '../assets/a1.png'
+
 import HomeBanner from './HomeBanner'
 import HomeServices from './HomeServices'
 import SecondBanner from './SecondBanner'
 import TestimonialSlider from './Testimonial'
+import BookingDragDrop from "./BookingDragDrop"
+import { Parallax } from 'react-parallax'
 const HomePage = () => {
   return (
     <>
       <div>
         <Carousel />
+        <div>
+          <Parallax bgImage={b} strength={500}>
+            <div style={{ height: 500 }}>
+              
+            </div>
+          </Parallax>
+          
+        </div>
         <div className='home-page section-center'>
           <div className='home-services'>
             <article className='home-service'>
@@ -75,20 +87,20 @@ const HomePage = () => {
             <article className='home-about-content'>
               <span className='home-about-span'>// about us //</span>
               <h3>
-                <span>auto mart</span>: Unrivaled Excellence in Automotive
+                <span>Chads Auto</span>: Unrivaled Excellence in Automotive
                 Maintenance and Repair
               </h3>
               <p className='home-about-p'>
-                <span> At Auto Mart</span>, we redefine the standards of
+                <span> At Chads Auto</span>, we redefine the standards of
                 automotive care. Our commitment to excellence ensures that every
                 vehicle we service receives meticulous attention and expert
                 craftsmanship. With a team of seasoned professionals,
                 state-of-the-art equipment, and a passion for cars, we guarantee
                 top-tier maintenance and repair solutions for all makes and
                 models. Whether it's a routine check-up or a complex repair,
-                Auto Mart is the trusted name in ensuring your vehicle's optimum
-                performance and longevity. Experience the best in auto care with
-                Auto Mart.
+                Chads Auto is the trusted name in ensuring your vehicle's
+                optimum performance and longevity. Experience the best in auto
+                care with Chads Auto.
               </p>
               <div className='home-about-number'>
                 <article>
@@ -98,9 +110,9 @@ const HomePage = () => {
                   <div>
                     <h3>Masterful & Accomplished</h3>
                     <p>
-                      Auto Mart boasts a Masterful & Accomplished team, ensuring
-                      unparalleled precision and excellence in every automotive
-                      service provided
+                      Chads Auto boasts a Masterful & Accomplished team,
+                      ensuring unparalleled precision and excellence in every
+                      automotive service provided
                     </p>
                   </div>
                 </article>
@@ -109,11 +121,11 @@ const HomePage = () => {
                     <span>02</span>
                   </div>
                   <div>
-                    <h3>Masterful & Accomplished</h3>
+                    <h3>Expert Diagnostics</h3>
                     <p>
-                      Auto Mart boasts a Masterful & Accomplished team, ensuring
-                      unparalleled precision and excellence in every automotive
-                      service provided
+                      At Chad's Auto, our diagnostic process ensures accurate
+                      identification of your vehicle's issues, leading to
+                      efficient and effective repairs.
                     </p>
                   </div>
                 </article>
@@ -122,11 +134,11 @@ const HomePage = () => {
                     <span>03</span>
                   </div>
                   <div>
-                    <h3>Masterful & Accomplished</h3>
+                    <h3>Quality Craftsmanship</h3>
                     <p>
-                      Auto Mart boasts a Masterful & Accomplished team, ensuring
-                      unparalleled precision and excellence in every automotive
-                      service provided
+                      Our team at Chad's Auto Repair is dedicated to quality
+                      craftsmanship, using only the best parts and practices to
+                      keep your car running smoothly.
                     </p>
                   </div>
                 </article>
@@ -137,9 +149,10 @@ const HomePage = () => {
         </div>
       </div>
       <HomeBanner />
-      <HomeServices/>
-      <SecondBanner/>
-      <TestimonialSlider/>
+      <HomeServices />
+      <BookingDragDrop/>
+      <SecondBanner />
+      <TestimonialSlider />
     </>
   )
 }

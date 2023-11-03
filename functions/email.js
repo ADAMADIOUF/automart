@@ -10,9 +10,11 @@ exports.handler = async (event, context, cb) => {
     }
   }
 
-  const { name, email, subject, message } = JSON.parse(event.body)
+  const { name, email, message, } = JSON.parse(
+    event.body
+  )
 
-  if (!name || !email || !subject || !message) {
+  if (!name || !email ||  !message ) {
     return { statusCode: 400, body: 'Please provide all values' }
   }
 
@@ -27,9 +29,9 @@ exports.handler = async (event, context, cb) => {
 
   const mailOptions = {
     from: process.env.EMAIL_EMAIL, // Your email
-    to: process.env.EMAIL_EMAIL, // Your email where you want to receive the emails
-    subject: `Contact form submission from ${name}: ${subject}`,
-    text: `Message from: ${email}\n\n${message}`,
+    to: 'dioufaminata1702@gmail.com', // Your client's email
+    subject: `Contact form submission from ${name}: `,
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   }
   try {
     await transporter.sendMail(mailOptions)
