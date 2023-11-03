@@ -203,7 +203,9 @@ text-transform: uppercase;
       filter: brightness(0.9);
 }
 
-
+.btn a{
+  color: var(--clr-white);
+}
 .page-100 {
   min-height: calc(100vh - 10rem);
   padding: 5rem 0;

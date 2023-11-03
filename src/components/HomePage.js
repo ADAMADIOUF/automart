@@ -9,8 +9,8 @@ import HomeBanner from './HomeBanner'
 import HomeServices from './HomeServices'
 import SecondBanner from './SecondBanner'
 import TestimonialSlider from './Testimonial'
-import BookingDragDrop from "./BookingDragDrop"
 import { Parallax } from 'react-parallax'
+import { Link } from 'react-router-dom'
 const HomePage = () => {
   
   return (
@@ -19,11 +19,8 @@ const HomePage = () => {
         <Carousel />
         <div>
           <Parallax bgImage={b} strength={500}>
-            <div style={{ height: 500 }}>
-              
-            </div>
+            <div style={{ height: 500 }}></div>
           </Parallax>
-          
         </div>
         <div className='home-page section-center'>
           <div className='home-services'>
@@ -144,14 +141,15 @@ const HomePage = () => {
                   </div>
                 </article>
               </div>
-              <button className='btn'>read more</button>
+              <button className='btn'>
+                <Link to={`/about`}>read more</Link>
+              </button>
             </article>
           </div>
         </div>
       </div>
       <HomeBanner />
       <HomeServices />
-      <BookingDragDrop/>
       <SecondBanner />
       <TestimonialSlider />
     </>

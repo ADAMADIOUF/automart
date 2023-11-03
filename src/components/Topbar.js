@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faMapMarkerAlt,
@@ -14,8 +14,18 @@ import {
 import { Link } from 'react-router-dom'
 
 const Topbar = () => {
+  const aboutContainerRef = useRef(null)
+
+  useEffect(() => {
+    if (aboutContainerRef.current) {
+      window.scroll({
+        top: aboutContainerRef.current.offsetTop,
+        behavior: 'smooth',
+      })
+    }
+  }, [])
   return (
-    <div className='topbar'>
+    <div className='topbar' ref={aboutContainerRef}>
       <div className='topbar--container section-nav'>
         <article className='topbar-left'>
           <div className='topbar-item'>

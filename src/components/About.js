@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { FaTools, FaWrench } from 'react-icons/fa'
 import { MdOutlineEngineering } from 'react-icons/md'
 import a from "../assets/about.png"
 const About = () => {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    })
+    
+  }, [])
+  
   return (
     <div className='about'>
       <div className='about-header'>
@@ -64,18 +72,13 @@ const About = () => {
           </div>
         </article>
       </div>
-      <div className="aboutContainer section-center">
-        <div className="imageContainer">
-          
-          <img
-            src={a}
-            alt="Chad's Auto Repair Shop"
-            className="aboutImage"
-          />
+      <div className='aboutContainer section-center'>
+        <div className='imageContainer'>
+          <img src={a} alt="Chad's Auto Repair Shop" className='aboutImage' />
         </div>
-        <div className="contentContainer">
-          <h1 className="title-text">Chad's Auto Repair</h1>
-          <p className="description-text">
+        <div className='contentContainer'>
+          <h1 className='title-text'>Chad's Auto Repair</h1>
+          <p className='description-text'>
             Welcome to Chad's Auto Repair - your trusted partner in automotive
             care. Our expert team is dedicated to providing top-notch repair
             services with a focus on precision, efficiency, and customer

@@ -9,7 +9,7 @@ const HomeBanner = () => {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setCount(true)
-    }, 2000)
+    }, 3000)
 
     return () => {
       clearTimeout(loadingTimer)
@@ -32,7 +32,7 @@ const HomeBanner = () => {
                 </span>
                 <h3>
                   {count && (
-                    <CountUp start={0} end={15} duration={2} delay={0} />
+                    <CountUp start={0} end={25} duration={2} delay={0} />
                   )}
                  
                 </h3>
@@ -44,7 +44,7 @@ const HomeBanner = () => {
                 </span>
                 <h3>
                   {count && (
-                    <CountUp start={0} end={9} duration={2} delay={0} />
+                    <CountUp start={0} end={19} duration={2} delay={0} />
                   )}
                  
                 </h3>
@@ -56,7 +56,7 @@ const HomeBanner = () => {
                 </span>
                 <h3>
                   {count && (
-                    <CountUp start={0} end={1250} duration={2} delay={0} />
+                    <CountUp start={0} end={51250} duration={2} delay={0} />
                   )}
                 
                 </h3>
@@ -68,7 +68,7 @@ const HomeBanner = () => {
                 </span>
                 <h3>
                   {count && (
-                    <CountUp start={0} end={1220} duration={2} delay={0} />
+                    <CountUp start={0} end={61220} duration={2} delay={0} />
                   )}
                 
                 </h3>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaWrench, FaCarBattery, FaOilCan } from 'react-icons/fa'
 import { GiFlatTire } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 
 const HomeServices = () => {
   const services = [
@@ -78,7 +79,9 @@ const HomeServices = () => {
             and we look forward to continuing to serve as your go-to destination
             for all your auto servicing needs for many more years to come.
           </p>
-          <button className='btn'>read more</button>
+          <button className='btn'>
+            <Link to={`/services`}>read more</Link>
+          </button>
         </article>
       </div>
     </div>

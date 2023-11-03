@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import a from "../assets/s1.png"
 import b from '../assets/s3.png'
+import { Link } from 'react-router-dom'
 
 const CustomCarousel = () => {
   return (
@@ -23,10 +24,10 @@ const CustomCarousel = () => {
                   <h1 className='display-3 text-white mb-4 pb-3'>
                     Auto Repair Essentials: A Comprehensive Guide
                   </h1>
-                  <a href='#' className='btn btn-primary py-3 px-5'>
+                  <Link to='/about' className='btn btn-primary py-3 px-5'>
                     Learn More
                     <FontAwesomeIcon icon={faArrowRight} className='ms-3' />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -43,10 +44,10 @@ const CustomCarousel = () => {
                   <h1 className='display-3 text-white mb-4 pb-3'>
                     Under the Hood: Mastering Car Repairs
                   </h1>
-                  <a href='#' className='btn btn-primary py-3 px-5'>
+                  <Link to='/about' className='btn btn-primary py-3 px-5'>
                     Learn More
                     <FontAwesomeIcon icon={faArrowRight} className='ms-3' />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

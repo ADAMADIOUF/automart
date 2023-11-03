@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HomeServices from './HomeServices'
 import SecondBanner from './SecondBanner'
 
 const Services = () => {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }, [])
   return (
     <div className='about'>
       <div className='about-header'>
