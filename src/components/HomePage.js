@@ -12,6 +12,7 @@ import TestimonialSlider from './Testimonial'
 import BookingDragDrop from "./BookingDragDrop"
 import { Parallax } from 'react-parallax'
 const HomePage = () => {
+  
   return (
     <>
       <div>

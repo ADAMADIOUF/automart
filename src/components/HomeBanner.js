@@ -32,9 +32,9 @@ const HomeBanner = () => {
                 </span>
                 <h3>
                   {count && (
-                    <CountUp start={0} end={85} duration={2} delay={0} />
+                    <CountUp start={0} end={15} duration={2} delay={0} />
                   )}
-                  %
+                 
                 </h3>
                 <span>Years Experience</span>
               </article>
@@ -46,7 +46,7 @@ const HomeBanner = () => {
                   {count && (
                     <CountUp start={0} end={9} duration={2} delay={0} />
                   )}
-                  %
+                 
                 </h3>
                 <span>Expert Technicians</span>
               </article>
@@ -58,7 +58,7 @@ const HomeBanner = () => {
                   {count && (
                     <CountUp start={0} end={1250} duration={2} delay={0} />
                   )}
-                  %
+                
                 </h3>
                 <span>Satisfied Clients</span>
               </article>
@@ -70,7 +70,7 @@ const HomeBanner = () => {
                   {count && (
                     <CountUp start={0} end={1220} duration={2} delay={0} />
                   )}
-                  %
+                
                 </h3>
                 <span>Completed Projects</span>
               </article>
