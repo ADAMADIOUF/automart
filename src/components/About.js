@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { FaTools, FaWrench } from 'react-icons/fa'
 import { MdOutlineEngineering } from 'react-icons/md'
-import a from "../assets/about.png"
+import a from "../assets/about1.png"
 const About = () => {
   useEffect(() => {
     window.scroll({
