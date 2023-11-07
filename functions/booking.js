@@ -29,7 +29,7 @@ exports.handler = async (event, context, cb) => {
 
   const mailOptions = {
     from: process.env.EMAIL_EMAIL, // Your email
-    to: 'dioufaminata1702@gmail.com', // Your client's email
+    to: 'chadsautorepair@gmail.com', // Your client's email
     subject: `Contact form submission from ${name}: `,
     text: `Name: ${name}\nEmail: ${email}\nServices: ${services}\nDate: ${date}\nMessage: ${message}\nPhone Number: ${phoneNumber}`,
   }
